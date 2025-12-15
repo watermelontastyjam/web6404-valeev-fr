@@ -1,0 +1,748 @@
+/* Стили для сайта Secret Space VR - Розовая тема */
+
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f7;
+    color: #5a3d5c;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для шапки */
+header {
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 5px 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover, nav a.active {
+    background-color: #fff;
+    color: #ff69b4;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* Стили для главной страницы */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #ffe4e9 0%, #ffd6e0 100%);
+    border-bottom: 3px solid #ffb6c1;
+    width: 100%;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+    min-width: 300px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #8a4b8c;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+    background: linear-gradient(45deg, #ff1493, #ff69b4);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+    border: 5px solid white;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.features-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.feature {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #ffe4e9 0%, #ffd6e0 100%);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    color: #ff69b4;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Стили для таблиц */
+.news {
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.news h2 {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    border: 2px solid #ffb6c1;
+    max-width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffd6e0;
+}
+
+th {
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+    color: white;
+    font-weight: bold;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    text-align: left;
+    padding-left: 25px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    text-align: center;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    text-align: right;
+    padding-right: 25px;
+}
+
+tr:hover {
+    background-color: #fff5f7;
+}
+
+/* Стили для страницы с играми */
+.page-title {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.game-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    transition: all 0.3s ease;
+    border: 3px solid #ffd6e0;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.4);
+}
+
+.game-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffd6e0;
+}
+
+.game-info {
+    padding: 25px;
+}
+
+.game-info h3 {
+    margin-top: 0;
+    color: #ff69b4;
+    font-size: 1.5rem;
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.genre {
+    background: linear-gradient(45deg, #ffb6c1, #ff69b4);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.rating {
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.comparison {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.comparison h3 {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 30px;
+}
+
+.comparison table {
+    margin: 0 auto;
+}
+
+/* Стили для страницы с оборудованием */
+.hardware-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #8a4b8c;
+    padding: 20px;
+    background-color: #fff5f7;
+    border-radius: 15px;
+    border: 2px dashed #ffb6c1;
+}
+
+.hardware-list {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hardware-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    border: 3px solid #ffd6e0;
+    flex-wrap: wrap;
+}
+
+.hardware-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.hardware-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hardware-image img {
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid #ffe4e9;
+}
+
+.hardware-info {
+    flex: 1;
+    padding: 0 30px;
+    min-width: 300px;
+}
+
+.hardware-info h3 {
+    color: #ff69b4;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.hardware-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hardware-info li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ffd6e0;
+    color: #5a3d5c;
+}
+
+.hardware-info li:last-child {
+    border-bottom: none;
+}
+
+.hardware-info li:before {
+    content: "🌸 ";
+    color: #ff69b4;
+}
+
+.hardware-table {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hardware-table h3 {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 30px;
+}
+
+.hardware-table table {
+    margin: 0 auto;
+}
+
+/* Стили для страницы "О нас" */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    border: 3px solid #ffd6e0;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 2;
+    padding-right: 40px;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: #ff69b4;
+    margin-top: 25px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.about-text li {
+    padding: 10px 0;
+    color: #5a3d5c;
+    position: relative;
+    padding-left: 30px;
+}
+
+.about-text li:before {
+    content: "🎮 ";
+    color: #ff69b4;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+    border: 3px solid #ffd6e0;
+    box-sizing: border-box;
+}
+
+.contact-form h3 {
+    text-align: center;
+    color: #ff69b4;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ffd6e0;
+    border-radius: 10px;
+    background-color: #fff5f7;
+    color: #5a3d5c;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ff69b4;
+    background-color: #fff;
+}
+
+/* Стили для подвала */
+footer {
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 5px solid white;
+    color: white;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.back-link {
+    text-align: center;
+    margin: 40px 0;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.back-link a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #fff5f7;
+    transition: all 0.3s ease;
+    margin: 5px;
+    display: inline-block;
+}
+
+.back-link a:hover {
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+}
+
+/* Стили для спецификаций */
+.hardware-info ul li strong {
+    color: #ff69b4;
+}
+
+.hardware-info ul li:before {
+    content: "✓ ";
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+/* Дополнительные стили для страницы "О нас" */
+.notice-box {
+    background-color: #fff5f7;
+    border-left: 5px solid #ff69b4;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+}
+
+.notice-box h4 {
+    color: #ff69b4;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #ffe4e9 0%, #ffd6e0 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff1493;
+    text-decoration: underline;
+}
+
+.ps-box {
+    background-color: #fff;
+    border: 2px dashed #ffb6c1;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 25px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.ps-box p {
+    margin: 0;
+    color: #5a3d5c;
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #8a4b8c;
+    font-style: italic;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .features-container {
+        flex-direction: column;
+    }
+    
+    .hardware-item,
+    .hardware-item.reverse {
+        flex-direction: column;
+    }
+    
+    .hardware-info {
+        padding: 20px 0 0 0;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        padding: 15px;
+    }
+    
+    .contact-info p {
+        font-size: 1rem;
+    }
+    
+    .notice-box,
+    .ps-box {
+        padding: 15px;
+    }
+    
+    .about-text li {
+        padding-left: 25px;
+    }
+}

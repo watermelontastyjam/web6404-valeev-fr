@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Space VR - О нас</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Secret Space VR</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="games.html">Топ игр</a></li>
+                    <li><a href="hardware.html">Оборудование</a></li>
+                    <li><a href="about.html" class="active">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <h2 class="page-title">О нашем VR-тайм-кафе</h2>
+            
+            <section class="about-content">
+                <div class="about-text">
+                    <h3>🌸 Хотите получить неземной отдых? Тогда вам к нам.</h3>
+                    <p>Мы предоставим вам и вашей компании:</p>
+                    <ul>
+                        <li><strong>Большую комнату</strong> - просторная и уютная зона отдыха</li>
+                        <li><strong>Чуть менее большой телевизор</strong> - для просмотра фильмов и спортивных трансляций</li>
+                        <li><strong>Консоль с играми</strong> - как на компанию, так и на одного человека</li>
+                        <li><strong>Кинект</strong> - новое - хорошо забытое старое!</li>
+                        <li><strong>Пара очков виртуальной реальности</strong> и отдельная комната для игры в них</li>
+                    </ul>
+                    
+                    <p>А также многое другое... У нас будете только вы и ваши прекрасные друзья.</p>
+                    
+                    <h3>Цены и условия</h3>
+                    <p>Цена зависит от количества человек. У нас гибкая система скидок для компаний!</p>
+                    
+                    <div class="notice-box">
+                        <h4>⚠️ Важное правило:</h4>
+                        <p>В случае грубого нарушения правил тайм-кафе или проявления неуважения к другим посетителям и персоналу, администрация имеет право выгнать посетителя из заведения без возврата средств. Спасибо за понимание!</p>
+                    </div>
+                    
+                    <h3>Бронирование</h3>
+                    <p>Бронируйте любое время с <strong>14.00 - 01:00</strong> по телефону:</p>
+                    <div class="contact-info">
+                        <p><strong>Телефон:</strong> <a href="tel:+79677241540">+7 967 724 15 40</a></p>
+                        <p><strong>ВКонтакте:</strong> Напишите нам сообщение для бронирования</p>
+                    </div>
+                    
+                    <div class="ps-box">
+                        <p><strong>PS:</strong> На данный момент работаем только по предварительной записи.</p>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="contact-form">
+                <h3>Отправьте заявку на бронирование</h3>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Желаемая дата:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Желаемое время:</label>
+                        <select id="time" name="time" required>
+                            <option value="">Выберите время</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="00:00">00:00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="people">Количество человек:</label>
+                        <input type="number" id="people" name="people" min="1" max="20" required placeholder="2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Дополнительные пожелания:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Например: хотим поиграть в VR, нужен Кинект..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить заявку 💌</button>
+                    <p class="form-note">Мы свяжемся с вами в течение 2 часов для подтверждения бронирования</p>
+                </form>
+            </section>
+            
+            <div class="back-link">
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Secret Space VR</p>
+            <p>Лабораторная работа №2</p>
+            <p>Телефон для бронирования: <a href="tel:+79677241540">+7 967 724 15 40</a></p>
+        </div>
+    </footer>
+</body>
+</html>

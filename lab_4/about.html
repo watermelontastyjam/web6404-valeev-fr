@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Space VR - О нас</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="header__title">ℹ️ Secret Space VR</h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="games.html" class="nav__link">Топ игр</a></li>
+                    <li class="nav__item"><a href="hardware.html" class="nav__link">Оборудование</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about-hero">
+            <h1 class="about-hero__title">О нашем VR-тайм-кафе</h1>
+            <p class="about-hero__text">Незабываемый отдых в виртуальной реальности</p>
+        </section>
+
+        <div class="about-content">
+            <section class="about-info">
+                <h2 class="section-title">🌸 Хотите получить неземной отдых? Тогда вам к нам</h2>
+                
+                <div class="services">
+                    <h3 class="services__title">Мы предоставим вам:</h3>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <span class="services__icon">🛋️</span>
+                            <span class="services__text">Просторную комнату для отдыха</span>
+                        </li>
+                        <li class="services__item">
+                            <span class="services__icon">📺</span>
+                            <span class="services__text">Большой телевизор для фильмов</span>
+                        </li>
+                        <li class="services__item">
+                            <span class="services__icon">🎮</span>
+                            <span class="services__text">Консоли с играми на компанию</span>
+                        </li>
+                        <li class="services__item">
+                            <span class="services__icon">🕶️</span>
+                            <span class="services__text">VR очки и отдельную комнату</span>
+                        </li>
+                        <li class="services__item">
+                            <span class="services__icon">🤝</span>
+                            <span class="services__text">Гибкую систему скидок</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="notice">
+                    <div class="notice__icon">⚠️</div>
+                    <div class="notice__content">
+                        <h4 class="notice__title">Важное правило:</h4>
+                        <p class="notice__text">При нарушении правил тайм-кафе администрация оставляет за собой право выгнать посетителя без возврата средств.</p>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block__title">Бронирование</h3>
+                    <p class="contact-block__text">Бронируйте любое время с <strong>14:00 до 01:00</strong></p>
+                    <div class="contact-info">
+                        <p class="contact-info__item">
+                            <strong>Телефон:</strong> 
+                            <a href="tel:+79677241540" class="contact-info__link">+7 967 724 15 40</a>
+                        </p>
+                        <p class="contact-info__item">
+                            <strong>Работаем:</strong> только по предварительной записи
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-form">
+                <h2 class="section-title">Бронирование VR-сессии</h2>
+                <p class="booking-form__description">Заполните форму ниже для бронирования</p>
+                
+                <form id="bookingForm" class="form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Ваше имя *</label>
+                        <input type="text" id="name" name="name" class="form__input" required 
+                               placeholder="Иван Иванов" minlength="2">
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input type="email" id="email" name="email" class="form__input" required 
+                               placeholder="example@mail.ru">
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" class="form__input" required 
+                               placeholder="+7 (900) 123-45-67" pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}">
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="date" class="form__label">Дата посещения *</label>
+                        <input type="date" id="date" name="date" class="form__input" required 
+                               min="2024-01-01">
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="time" class="form__label">Время *</label>
+                        <select id="time" name="time" class="form__select" required>
+                            <option value="">Выберите время</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                            <option value="00:00">00:00</option>
+                        </select>
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="players" class="form__label">Количество человек *</label>
+                        <input type="number" id="players" name="players" class="form__input" required 
+                               min="1" max="10" value="2">
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="vrType" class="form__label">Тип VR-опыта</label>
+                        <select id="vrType" name="vrType" class="form__select">
+                            <option value="">Не важно</option>
+                            <option value="games">Игры</option>
+                            <option value="cinema">VR-кинотеатр</option>
+                            <option value="social">Социальное VR</option>
+                            <option value="sports">VR-спорт</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="duration" class="form__label">Продолжительность (часы) *</label>
+                        <input type="range" id="duration" name="duration" class="form__range" 
+                               min="1" max="5" value="2">
+                        <div class="form__range-value">
+                            <span id="durationValue">2 часа</span>
+                        </div>
+                    </div>
+
+                    <div class="form__group form__group--checkbox">
+                        <input type="checkbox" id="terms" name="terms" class="form__checkbox" required>
+                        <label for="terms" class="form__checkbox-label">
+                            Я согласен на обработку персональных данных и ознакомлен с правилами
+                        </label>
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="comments" class="form__label">Дополнительные пожелания</label>
+                        <textarea id="comments" name="comments" class="form__textarea" 
+                                  rows="4" placeholder="Например: хотим поиграть в Beat Saber, нужны 4 VR-очка..."></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn btn--primary btn--large">
+                        Отправить заявку 💌
+                    </button>
+                    
+                    <p class="form__note">Мы свяжемся с вами в течение 2 часов для подтверждения</p>
+                </form>
+            </section>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html" class="btn btn--secondary">← На главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2025 Secret Space VR | Лабораторная работа №4</p>
+            <p class="footer__contact">Телефон: <a href="tel:+79677241540" class="footer__link">+7 967 724 15 40</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
