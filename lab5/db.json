@@ -1,0 +1,184 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "name": "Анна Иванова",
+      "email": "anna@example.com",
+      "phone": "+79161234567",
+      "date": "2024-01-15",
+      "time": "14:00",
+      "players": 2,
+      "vrType": "games",
+      "duration": 2,
+      "comments": "Хотим поиграть в Beat Saber",
+      "createdAt": "2024-01-10T10:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Петр Сидоров",
+      "email": "peter@example.com",
+      "phone": "+79269876543",
+      "date": "2024-01-16",
+      "time": "18:00",
+      "players": 4,
+      "vrType": "social",
+      "duration": 3,
+      "comments": "Корпоративное мероприятие",
+      "createdAt": "2024-01-11T14:20:00.000Z"
+    },
+    {
+      "name": "фыв",
+      "email": "tastyjam4human@gmail.com",
+      "phone": "+7 967 724 15 40",
+      "date": "2025-12-24",
+      "time": "23:00",
+      "players": "2",
+      "terms": true,
+      "createdAt": "2025-12-19T17:57:41.135Z",
+      "id": 1766167061135
+    },
+    {
+      "name": "фыв",
+      "email": "tastyjam4human@gmail.com",
+      "phone": "+7 967 724 15 40",
+      "date": "2025-12-24",
+      "time": "23:00",
+      "players": "2",
+      "terms": true,
+      "createdAt": "2025-12-19T17:57:50.805Z",
+      "id": 1766167070805
+    },
+    {
+      "name": "авфы",
+      "email": "tastyjam4human@gmail.com",
+      "phone": "+79677241540",
+      "date": "2025-12-21",
+      "time": "22:00",
+      "players": 2,
+      "vrType": "",
+      "duration": 2,
+      "comments": "",
+      "terms": true,
+      "createdAt": "2025-12-19T20:15:17.427Z",
+      "id": 1766175317427
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "Half-Life: Alyx",
+      "genre": "Шутер",
+      "rating": 9.5,
+      "multiplayer": false,
+      "duration": "11-13 часов",
+      "description": "Эпический шутер от Valve, переопределяющий стандарты VR-гейминга.",
+      "image": "/images/games/game-hl.webp"
+    },
+    {
+      "id": 2,
+      "title": "Beat Saber",
+      "genre": "Ритм-игра",
+      "rating": 9,
+      "multiplayer": false,
+      "duration": "Бесконечно",
+      "description": "Ритм-игра с световыми мечами под музыку.",
+      "image": "/images/games/game-beat.webp"
+    },
+    {
+      "id": 3,
+      "title": "I Am Cat",
+      "genre": "Симулятор",
+      "rating": 8.5,
+      "multiplayer": false,
+      "duration": "3-5 часов",
+      "description": "Симулятор кота в виртуальной реальности.",
+      "image": "/images/games/i-am-cat.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Crisis Brigade 2",
+      "genre": "Шутер",
+      "rating": 8.5,
+      "multiplayer": true,
+      "duration": "4-6 часов",
+      "description": "Шутер от первого лица в стиле SWAT.",
+      "image": "images/games/crisis-brigade-2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Arizona Sunshine",
+      "genre": "Зомби-шутер",
+      "rating": 8.5,
+      "multiplayer": true,
+      "duration": "6-8 часов",
+      "description": "Зомби-шутер в пустынях Аризоны.",
+      "image": "/images/games/arizona-sunshine.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Boneworks",
+      "genre": "Физический экшен",
+      "rating": 9,
+      "multiplayer": false,
+      "duration": "8-10 часов",
+      "description": "Физический шутер с передовой физикой.",
+      "image": "/images/games/boneworks.jpg"
+    },
+    {
+      "id": 7,
+      "title": "SUPERHOT VR",
+      "genre": "Экшен",
+      "rating": 9.2,
+      "multiplayer": false,
+      "duration": "3-4 часа",
+      "description": "Время движется только когда вы двигаетесь.",
+      "image": "/images/games/superhot-vr.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Pavlov VR",
+      "genre": "Тактический шутер",
+      "rating": 8.8,
+      "multiplayer": true,
+      "duration": "Бесконечно",
+      "description": "Тактический шутер в стиле Counter-Strike.",
+      "image": "/images/games/pavlov-vr.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Walking Dead: Saints & Sinners",
+      "genre": "Выживание",
+      "rating": 9.1,
+      "multiplayer": false,
+      "duration": "12-15 часов",
+      "description": "Выживание в мире зомби.",
+      "image": "/images/games/walking-dead.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Into the Radius",
+      "genre": "Выживание",
+      "rating": 8.9,
+      "multiplayer": false,
+      "duration": "15-20 часов",
+      "description": "Хардкорный симулятор выживания.",
+      "image": "/images/games/into-the-radius.jpg"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "date": "13.12.2024",
+      "title": "Выход Counter Strike 1.6 VR",
+      "category": "Игры",
+      "content": "Valve анонсировала релиз классической CS 1.6 в виртуальной реальности"
+    },
+    {
+      "id": 2,
+      "date": "31.11.2024",
+      "title": "Steam Frame новые VR очки от Valve",
+      "category": "Оборудование",
+      "content": "Компания Valve представила новые беспроводные VR-очки Steam Frame"
+    }
+  ]
+}
