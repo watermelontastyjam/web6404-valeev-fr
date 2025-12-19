@@ -1,0 +1,17 @@
+{
+  "name": "secret-space-vr-lab5",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №5 - Secret Space VR",
+  "main": "mock-server.js",
+  "scripts": {
+    "start": "node mock-server.js",
+    "dev": "nodemon mock-server.js"
+  },
+  "keywords": ["vr", "games", "booking", "lab5", "web-programming"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

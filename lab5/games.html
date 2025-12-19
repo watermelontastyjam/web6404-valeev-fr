@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Space VR - Топ игр</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="header__title">🎮 Secret Space VR</h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="games.html" class="nav__link nav__link--active">Топ игр</a></li>
+                    <li class="nav__item"><a href="hardware.html" class="nav__link">Оборудование</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="games-hero">
+            <h1 class="games-hero__title">Топ VR-игр</h1>
+            <p class="games-hero__text">Каждый раз новые случайные игры!</p>
+            <button id="refreshGamesBtn" class="btn btn--primary">🔄 Новые игры</button>
+        </section>
+
+        <!-- Карточки игр -->
+        <section class="games-grid" id="games-container">
+            <!-- Игры загружаются через JavaScript -->
+        </section>
+
+        <!-- Таблица сравнения -->
+        <section class="comparison">
+            <h2 class="section-title">Сравнение всех игр</h2>
+            <div class="comparison-table" id="comparison-table">
+                <div class="table-header">
+                    <div class="table-cell">Игра</div>
+                    <div class="table-cell">Жанр</div>
+                    <div class="table-cell">Мультиплеер</div>
+                    <div class="table-cell">Длительность</div>
+                    <div class="table-cell">Рекомендация</div>
+                </div>
+                <!-- Игры загружаются через JavaScript -->
+            </div>
+        </section>
+
+        <div class="back-link">
+            <a href="index.html" class="btn btn--secondary">← На главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2025 Secret Space VR | Лабораторная работа №5</p>
+            <p class="footer__contact">Телефон: <a href="tel:+79677241540" class="footer__link">+7 967 724 15 40</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
