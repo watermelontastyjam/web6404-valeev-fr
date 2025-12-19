@@ -61,6 +61,48 @@
       "terms": true,
       "createdAt": "2025-12-19T20:15:17.427Z",
       "id": 1766175317427
+    },
+    {
+      "name": "hfn",
+      "email": "tastyjam4human@gmail.com",
+      "phone": "+79033086596",
+      "date": "2025-12-20",
+      "time": "15:00",
+      "players": 2,
+      "vrType": "",
+      "duration": 2,
+      "comments": "",
+      "terms": true,
+      "createdAt": "2025-12-19T20:42:39.592Z",
+      "id": 1766176959592
+    },
+    {
+      "name": "fdsa",
+      "email": "tastyjam4human@gmail.com",
+      "phone": "+79677241540",
+      "date": "2025-12-21",
+      "time": "18:00",
+      "players": 2,
+      "vrType": "",
+      "duration": 2,
+      "comments": "",
+      "terms": true,
+      "createdAt": "2025-12-19T20:54:58.111Z",
+      "id": 1766177698111
+    },
+    {
+      "name": "dasd",
+      "email": "tastyjam4human@gmail.com",
+      "phone": "+79677241540",
+      "date": "2025-12-27",
+      "time": "16:00",
+      "players": 2,
+      "vrType": "",
+      "duration": 2,
+      "comments": "",
+      "terms": true,
+      "createdAt": "2025-12-19T20:57:22.690Z",
+      "id": 1766177842690
     }
   ],
   "games": [
@@ -102,7 +144,7 @@
       "multiplayer": true,
       "duration": "4-6 часов",
       "description": "Шутер от первого лица в стиле SWAT.",
-      "image": "images/games/crisis-brigade-2.jpg"
+      "image": "/images/games/crisi-brigade-2.jpg"
     },
     {
       "id": 5,
@@ -117,51 +159,51 @@
     {
       "id": 6,
       "title": "Boneworks",
-      "genre": "Физический экшен",
-      "rating": 9,
+      "genre": "Экшн",
+      "rating": 8.7,
       "multiplayer": false,
       "duration": "8-10 часов",
-      "description": "Физический шутер с передовой физикой.",
+      "description": "Физический экшн в виртуальной реальности.",
       "image": "/images/games/boneworks.jpg"
     },
     {
       "id": 7,
-      "title": "SUPERHOT VR",
-      "genre": "Экшен",
-      "rating": 9.2,
+      "title": "Superhot VR",
+      "genre": "Экшн",
+      "rating": 9.1,
       "multiplayer": false,
       "duration": "3-4 часа",
-      "description": "Время движется только когда вы двигаетесь.",
+      "description": "Время движется только тогда, когда двигаетесь вы.",
       "image": "/images/games/superhot-vr.jpg"
     },
     {
       "id": 8,
       "title": "Pavlov VR",
-      "genre": "Тактический шутер",
-      "rating": 8.8,
+      "genre": "Шутер",
+      "rating": 8.9,
       "multiplayer": true,
       "duration": "Бесконечно",
-      "description": "Тактический шутер в стиле Counter-Strike.",
-      "image": "/images/games/pavlov-vr.jpg"
+      "description": "Мультиплеерный шутер в духе Counter-Strike для VR.",
+      "image": "/images/games/paylov-vr.jpg"
     },
     {
       "id": 9,
       "title": "The Walking Dead: Saints & Sinners",
       "genre": "Выживание",
-      "rating": 9.1,
+      "rating": 9.2,
       "multiplayer": false,
-      "duration": "12-15 часов",
-      "description": "Выживание в мире зомби.",
-      "image": "/images/games/walking-dead.jpg"
+      "duration": "15+ часов",
+      "description": "Выживание в постапокалиптическом мире.",
+      "image": "/images/games/the-walking-dead-saints-and-sinners.jpg"
     },
     {
       "id": 10,
       "title": "Into the Radius",
       "genre": "Выживание",
-      "rating": 8.9,
+      "rating": 8.8,
       "multiplayer": false,
-      "duration": "15-20 часов",
-      "description": "Хардкорный симулятор выживания.",
+      "duration": "20+ часов",
+      "description": "Симулятор выживания в опасной зоне отчуждения.",
       "image": "/images/games/into-the-radius.jpg"
     }
   ],

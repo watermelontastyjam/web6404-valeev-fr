@@ -111,7 +111,45 @@ function serveStaticFile(req, res) {
             contentType = 'image/jpeg';
             break;
     }
-    
+    // В функции serveStaticFile добавьте:
+switch (extname) {
+    case '.js':
+        contentType = 'text/javascript';
+        break;
+    case '.css':
+        contentType = 'text/css';
+        break;
+    case '.json':
+        contentType = 'application/json';
+        break;
+    case '.png':
+        contentType = 'image/png';
+        break;
+    case '.jpg':
+    case '.jpeg':
+        contentType = 'image/jpeg';
+        break;
+    case '.webp':  // Добавьте эту строку
+        contentType = 'image/webp';
+        break;
+}
+
+// В функции serveImage также добавьте:
+switch (extname) {
+    case '.png':
+        contentType = 'image/png';
+        break;
+    case '.jpg':
+    case '.jpeg':
+        contentType = 'image/jpeg';
+        break;
+    case '.gif':
+        contentType = 'image/gif';
+        break;
+    case '.webp':  // Добавьте эту строку
+        contentType = 'image/webp';
+        break;
+}
     fs.readFile(filePath, (error, content) => {
         if (error) {
             if (error.code === 'ENOENT') {

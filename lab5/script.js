@@ -2,6 +2,18 @@
 let allGames = [];
 let displayedGames = [];
 
+const gameImageMapping = {
+    "Half-Life: Alyx": "game-hl.webp",
+    "Beat Saber": "game-beat.webp", 
+    "I Am Cat": "i-am-cat.jpg",
+    "Crisis Brigade 2": "crisi-brigade-2.jpg",
+    "Arizona Sunshine": "arizona-sunshine.jpg",
+    "Boneworks": "boneworks.jpg",
+    "Superhot VR": "superhot-vr.jpg",
+    "Pavlov VR": "paylov-vr.jpg",
+    "The Walking Dead: Saints & Sinners": "the-walking-dead-saints-and-sinners.jpg",
+    "Into the Radius": "into-the-radius.jpg"
+};
 // Загрузка игр с сервера
 async function loadGames() {
     try {
@@ -30,15 +42,26 @@ function getRandomGames(games, count) {
 }
 
 // Отрисовка карточек игр
+
+// Обновите функцию renderGames():
 function renderGames() {
     const container = document.getElementById('games-container');
     if (!container) return;
     
     container.innerHTML = displayedGames.map(game => {
-        // ИСПРАВЛЕНО: Используем локальные картинки из папки images
-        const imagePath = game.image && game.image.startsWith('/') 
-            ? game.image.slice(1) // Убираем первый слеш
-            : `images/games/${game.id || 'default'}.jpg`;
+        // Получаем имя файла из маппинга или используем image из базы
+        let imageFile = gameImageMapping[game.title] || 
+                       (game.image ? game.image.split('/').pop() : 'default.jpg');
+        
+        // Проверяем расширение файла
+        const ext = imageFile.split('.').pop().toLowerCase();
+        const allowedExt = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+        
+        if (!allowedExt.includes(ext)) {
+            imageFile = 'default.jpg';
+        }
+        
+        const imagePath = `images/games/${imageFile}`;
         
         return `
             <div class="game-card">
@@ -46,7 +69,7 @@ function renderGames() {
                     <img src="${imagePath}" 
                          alt="${game.title}" 
                          class="game-card__image"
-                         onerror="this.onerror=null; this.src='images/games/default.jpg'; this.alt='Изображение временно недоступно';">
+                         onerror="this.onerror=null; this.src='images/games/default.jpg';">
                     <div class="game-card__genre-badge">${game.genre}</div>
                     ${game.multiplayer ? '<div class="game-card__multiplayer-badge">👥</div>' : ''}
                 </div>
@@ -107,7 +130,8 @@ function getRecommendation(rating) {
     return '<span style="color: #9E9E9E;">○ Попробуйте</span>';
 }
 
-// Тестовые данные если сервер не работает
+
+// Обновите функцию useTestData():
 function useTestData() {
     allGames = [
         {
@@ -118,7 +142,7 @@ function useTestData() {
             multiplayer: false,
             duration: "11-13 часов",
             description: "Эпический шутер от Valve, переопределяющий стандарты VR-гейминга.",
-            image: "images/games/half-life-alyx.jpg"
+            image: "images/games/game-hl.webp"
         },
         {
             id: 2,
@@ -128,7 +152,7 @@ function useTestData() {
             multiplayer: false,
             duration: "Бесконечно",
             description: "Ритм-игра с световыми мечами под музыку.",
-            image: "images/games/beat-saber.jpg"
+            image: "images/games/game-beat.webp"
         },
         {
             id: 3,
